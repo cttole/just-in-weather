@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
 
 body{
     background-color:#eee;
@@ -8,12 +8,12 @@ body{
 
 header{
 text-align: center;
-
-
+margin: 10px;
+font-style: italic;
 }
 /* Search bar */
    .height{
-    height: 100vh;
+  height: 10px;
    }
    
 
@@ -95,4 +95,50 @@ text-align: center;
     width:400px;
     background: blue;
 
+}
+/* .vh-100{
+display: flex;
+justify-content: center;
+max-width: 15vw;
+
+border-radius: 10px; 
+}
+*/
+
+
+.vh-100 {
+    position: fixed;
+    top: 150px;
+    left: 500px;
+    right: 100px;
+    max-width: 150vw;
+    border-radius: 10px;
+    
+  }
+  .city {
+text-align: start ;
+margin-left: 55px;
+font-size: 30px;
+margin-top: 15px;
+  }
+.card-body {
+    text-align: start ;
+    margin-left: 55px;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    font-weight: light;
+
+}
+
+.search-item {
+    
+    padding: 4px;
+    margin-bottom: 10px;
+    background-color: grey;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content;
+    max-width: 200px;
+    height: 25px;
 }

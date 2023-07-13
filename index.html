@@ -11,25 +11,73 @@
     <header>
       <h1>JUST IN WEATHER</h1>
     </header>
-    <!-- Search bar -->
     <div class="container">
-
-        <div class="row height d-flex justify-content-center align-items-center">
-
+      <!-- Search bar -->
+      <div class="container">
+        <div
+          class="row height d-flex justify-content-center align-items-center"
+        >
           <div class="col-md-8">
-
             <div class="search">
               <i class="fa fa-search"></i>
-              <input type="text" class="form-control" placeholder="Have a question? Ask Now">
-              
+              <input
+                type="text"
+                id="search-input"
+                class="form-control"
+                placeholder="Los Angeles, CA"
+              />
             </div>
             <div>
-                <button class="btn btn-primary">Search</button>
+              <button id="search" class="btn btn-primary">Search</button>
             </div>
           </div>
-          
         </div>
+      </div>
+      <div class="search-history" id="searchHistory"></div>
     </div>
+    <!-- weather cards -->
+    <section class="vh-100" style="background-color: white">
+      <div class="desccontainer py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-100">
+          <div class="col-md-8 col-lg-6 col-xl-4">
+            <div class="card" style="color: #4b515d; border-radius: 35px">
+              <div class="card-body p-4">
+                <div class="d-flex">
+                  <h6 class="city flex-grow-1">Warsaw</h6>
+                </div>
+
+                <div class="d-flex flex-column text-center mt-5 mb-4">
+                  <h6
+                    class="display-4 mb-0 font-weight-bold"
+                    style="color: #1c2331"
+                  >
+                    13°C
+                  </h6>
+                  <span class="small" style="color: #868b94">Stormy</span>
+                </div>
+
+                <div class="d-flex align-items-center">
+                  <div class="flex-grow-1" style="font-size: 1rem">
+                    <div>
+                      <i class="fas fa-wind fa-fw" style="color: #868b94"></i>
+                      <span class="ms-1"> 40 km/h </span>
+                    </div>
+                    <div>
+                      <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                      <span class="ms-1"> 84% </span>
+                    </div>
+                    <div>
+                      <i class="fas fa-sun fa-fw" style="color: #868b94"></i>
+                      <span class="ms-1"> 0.2h </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script src="./develop/script.js"></script>
   </body>
 </html>
